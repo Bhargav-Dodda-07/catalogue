@@ -55,7 +55,7 @@ pipeline {
                 }
             }
         }
-        
+    }    
 
     // These are post-Build sections
     post {
@@ -76,5 +76,5 @@ pipeline {
             echo 'pipeline is aborted'
         }
     }
-    }
+    
 }
