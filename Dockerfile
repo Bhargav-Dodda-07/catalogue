@@ -7,12 +7,12 @@ COPY *.js .
 RUN npm install     
 
 
-FROM node:20.20.0-alpine3.24
+FROM node:20.20.0-alpine3.23
 # create group and user
 
 WORKDIR /opt/server
-# RUN apk update && \
-#     apk upgrade --no-cache
+RUN apk update && \
+    apk upgrade --no-cache
 RUN addgroup -S roboshop && adduser -S roboshop -G roboshop && \
     chown -R roboshop:roboshop /opt/server
 EXPOSE 8080
