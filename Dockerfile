@@ -7,7 +7,7 @@ COPY *.js .
 RUN npm install     
 
 
-FROM node:20.20.0-alpine3.23
+FROM node:20.20.0-alpine3.24
 # create group and user
 
 WORKDIR /opt/server
